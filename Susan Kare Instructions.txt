@@ -1,0 +1,4 @@
+﻿Using html and P5jsI want you to code an ASCII webcam following the code I have linked below. The only change I want you to make is to replace the pixels with the icons in the folder labeled icons.
+
+
+ASCII CODE: https://editor.p5js.org/CarolinaPhoenix/sketches/waoicRwH0
