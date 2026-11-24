@@ -15,7 +15,6 @@ const SIMILAR = DENSITIES.map(([, d]) =>
 const ICON_SIZE = 11;
 const STEP = 9;
 const LIGHT_MIN = 0.2 * 255;
-const LIGHT_MAX = 0.8 * 255;
 const DARK_MAX = 0.4 * 255;
 const WHITE_MIN = 0.9 * 255;
 const CONTRAST = 2;
@@ -84,9 +83,6 @@ function draw() {
       const t = floor(map(bright, 0, 255, iconsBlack.length, 0));
       const set = raw < DARK_MAX ? iconsWhite : iconsBlack;
       image(pickIcon(set, t, i, j), i * STEP, j * STEP, ICON_SIZE, ICON_SIZE);
-      if (raw > LIGHT_MAX) {
-        image(pickIcon(set, t + 1, i, j + 97), i * STEP, j * STEP, ICON_SIZE, ICON_SIZE);
-      }
     }
   }
 }
